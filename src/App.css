@@ -1,0 +1,64 @@
+/* navbar */
+
+.blogo{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.bicon{
+    background-color: #EC4D1D;
+    padding: 10px 13px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    box-shadow: 5px;
+}
+
+.bname{
+           font-weight: bold; 
+    span{
+            color: #E8281A;
+    }
+}
+
+.bsub{
+     color: gray;
+     font-size: 10px;
+     
+}
+
+.flexitem{
+    display: flex;
+    align-items: center;
+}
+
+.btn button{
+        background-color: #C71F13;
+        border: none;
+        color: aliceblue;
+        padding: 8px 18px;
+        border-radius: 10px;
+        font-size: 14px;
+}
+
+.btn button:hover{
+    background-color: #666060;
+} 
+
+
+
+
+/* ==========00            home           0000000================= */
+
+.hcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.himg{
+    
+    img{
+        border-radius: 50%;
+    }
+}
