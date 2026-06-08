@@ -50,10 +50,77 @@
 
 /* ==========00            home           0000000================= */
 
+
+
+
+
 .hcontainer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 80px 0;
+    flex-wrap: wrap;
+}
+
+
+.hcontain{
+   
+
+    .cardbody{
+             /* width: 400px; */
+    border: 1px solid rebeccapurple;
+    }
+}
+
+.hbadge{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .hstar{
+        padding: 8px 8px;
+        background-color: #EC4D1D;
+        color: aliceblue;
+        border-radius: 50%;
+    }
+    span{
+        font-weight: 600;
+
+    }
+}
+
+.htitle{
+
+    h1{
+        font-size: 5rem;
+        span{
+            color: #EC4D1D;
+        }
+    }
+}
+
+.htext{
+    font-weight: 400;
+}
+
+.btn{
+     background-color: #E02619;
+        border: none;
+        color: aliceblue;
+        padding: 20px 30px;
+        border-radius: 30px;
+        font-size: 14px;
+        font-weight: 700;
+
+        i{
+            padding-right: 20px;
+        }
+
+}
+.btnwatch{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
 }
 
 .himg{
