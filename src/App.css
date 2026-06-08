@@ -60,6 +60,12 @@
     justify-content: space-evenly;
     padding: 80px 0;
     flex-wrap: wrap;
+    gap: 30px;
+    /* gap: 20px; */
+}
+
+.cardcontainer{
+    width: 32rem;
 }
 
 
@@ -68,7 +74,7 @@
 
     .cardbody{
              /* width: 400px; */
-    border: 1px solid rebeccapurple;
+    border: 1px solid rgb(249, 248, 250);
     }
 }
 
@@ -101,9 +107,10 @@
 
 .htext{
     font-weight: 400;
+    padding: 20px 0;
 }
 
-.btn{
+.btnn{
      background-color: #E02619;
         border: none;
         color: aliceblue;
@@ -121,6 +128,13 @@
     text-decoration: none;
     color: black;
     font-weight: 600;
+
+    .play {
+        color:#EC4D1D;
+      
+        padding-right: 18px;
+      
+    }
 }
 
 .himg{
@@ -128,4 +142,59 @@
     img{
         border-radius: 50%;
     }
+}
+
+
+@media (max-width: 500px) {
+
+    .hcontainer{
+    
+    padding: 20px;
+    gap: 30px;
+    /* gap: 20px; */
+}
+
+.cardcontainer{
+    width: 28rem;
+}
+    .himg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    img{
+        width: 80%
+    }
+}
+  
+}
+
+
+
+
+/*  ===================== scoller =========== */
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #E02619;
+  padding: 12px 0;
+  color: aliceblue;
+
+}
+
+.scroll-content {
+  display: inline-flex;
+  gap: 50px;
+  animation: scroll 10s linear infinite;
+  
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
