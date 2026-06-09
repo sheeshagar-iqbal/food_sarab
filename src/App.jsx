@@ -9,20 +9,30 @@ import Login from './pages/Login'
 export const Authcontext = createContext()
 const App = () => {
   let [Auth, setAuth] = useState(false)
+  const [login, setLogin] = useState(false);
+  const [signup, setSignup] = useState(false);
   return (
     <>
-      <Authcontext.Provider value={{Auth,setAuth}}>
-              <Navbar13/>
-      </Authcontext.Provider>
-    
-    
-    {/* <Home/> */}
-    <Scroller/>
+       <Authcontext.Provider
+      value={{
+        Auth,
+        setAuth,
+        login,
+        setLogin,
+        signup,
+        setSignup,
+      }}
+    >
+      <Navbar13 />
+      <Home/>
+      <Scroller />
 
-    <Routes>
-      <Route path='/signup' element={<Signup/>}/>
-      <Route path='/login' element={<Login/>}/>
-    </Routes>
+      <Routes>
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Authcontext.Provider>
     </>
   )
 }

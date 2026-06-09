@@ -8,7 +8,7 @@ import { useContext } from 'react';
 import { Authcontext } from '../App';
 
 const Navbar13 = () => {
-  const {Auth ,setAuth}=useContext(Authcontext)
+  const {Auth ,setAuth,login,setLogin,signup,setSignup}=useContext(Authcontext)
   return (
     <>
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
@@ -38,8 +38,8 @@ const Navbar13 = () => {
 
           {(!Auth)?(
               <Nav className='flexitem'>
-            <Nav.Link as={Link} to='/signup'><div className="btn"><button>Signup</button></div></Nav.Link>
-            <Nav.Link as={Link} to='/login' >
+            <Nav.Link as={Link} to='/signup' onClick={()=>setSignup(true)}><div className="btn"><button>Signup</button></div></Nav.Link>
+            <Nav.Link as={Link} to='/login' onClick={()=>setLogin(true)} >
               <div className='btn'><button>Login</button></div>
               </Nav.Link>
           </Nav>

@@ -1,10 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import {  Link,useNavigate } from 'react-router-dom'
+import { Authcontext } from '../App'
+import Modal from "react-bootstrap/Modal";
+
 
 const Signup = () => {
     const [frmdata,setFrmdata]=useState({})
     // const [data,setdata]=useState([])
     const navigate=useNavigate()
+        const {signup,setSignup}=useContext(Authcontext)
+    
 
     function store(event){
         const {name,value}= event.target
@@ -22,7 +27,10 @@ const Signup = () => {
 
   return (
     <>
+
    <div className="frmcontainer">
+    <Modal show={signup} onHide={() => setSignup(false)}>
+
         <div className="frmbox login">
              <form action="" onSubmit={submit}>
       <h1>Login </h1>
@@ -72,6 +80,8 @@ const Signup = () => {
         
      </form>
         </div>
+    </Modal>
+
     </div>
     
     </>
