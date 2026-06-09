@@ -7,7 +7,8 @@ const Home = () => {
     <>
     <div className='hcontainer '>
         <div className='hcontain'>
-             <Card style={{ width: '28rem' }} className='cardcontainer'>
+             {/* <Card style={{ width: '28rem' }} className='cardcontainer'> */}
+             <Card  className='cardcontainer'>
         <Card.Body className='cardbody'>
         <Card.Subtitle className="mb-2 text-muted "> <div className="hbadge">
                 <div className='hstar'><i class="fa-solid fa-star"></i></div>

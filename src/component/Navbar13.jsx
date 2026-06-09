@@ -11,7 +11,7 @@ const Navbar13 = () => {
   const {Auth ,setAuth,login,setLogin,signup,setSignup}=useContext(Authcontext)
   return (
     <>
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary navbar13">
       <Container>
         <Navbar.Brand href="#home">
             <div className="blogo">

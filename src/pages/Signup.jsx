@@ -8,11 +8,13 @@ const Signup = () => {
     const [frmdata,setFrmdata]=useState({})
     // const [data,setdata]=useState([])
     const navigate=useNavigate()
-        const {signup,setSignup}=useContext(Authcontext)
+    const {signup,setSignup,setLogin}=useContext(Authcontext)
     
 
     function store(event){
-        const {name,value}= event.target
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
         setFrmdata({...frmdata,[name]:value})
     }
 
@@ -21,6 +23,8 @@ const Signup = () => {
         console.log(frmdata);
         // setdata([...data,frmdata])
         localStorage.setItem('signkey',JSON.stringify(frmdata))
+        console.log(data);
+        setLogin(true)
         navigate('/login')
         
     }
@@ -45,18 +49,18 @@ const Signup = () => {
         
          </div>
          <div className="inputs">
-                <input type="text"
-                 name='username' 
+                <input type='email'
+                 name='email' 
                  onChange={store} 
-                 placeholder='username'
+                 placeholder='email'
                  required />
                  <i class="fa-solid fa-user" ></i>
                  <br />
         
          </div>
          <div className="inputs">
-            <input type="text" 
-        name='email' 
+            <input type="password" 
+        name='password' 
         onChange={store} 
         placeholder='email'
         required />
@@ -65,8 +69,10 @@ const Signup = () => {
          </div>
 
         <div className="forget">
-            <label ><input type="checkbox"
+            <label >
+            <input type="checkbox"
              name="access"
+             onClick={store}
              required />I agree to Term and Condition</label>
             
             </div> 

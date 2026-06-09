@@ -7,11 +7,13 @@ const Login = () => {
     const [frmdata,setFrmdata]=useState({})
     // const [data,setdata]=useState([])
     const navigate =useNavigate()
-    const {login,setLogin}=useContext(Authcontext)
+    const {login,setLogin,setAuth}=useContext(Authcontext)
     
 
     function store(event){
-        const {name,value}= event.target
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
         setFrmdata({...frmdata,[name]:value})
     }
 
@@ -23,9 +25,11 @@ const Login = () => {
         let data2=JSON.parse(data)
         console.log(data2);
         
-        if(frmdata.username === data2.username && frmdata.email === data2.email){
+        if(frmdata.email === data2.email && frmdata.email === data2.email){
                     console.log('hi');
+                    setAuth(true)
                     navigate('/')
+
         }
         else{
           alert('user not found......')
@@ -41,20 +45,20 @@ const Login = () => {
              <form action="" onSubmit={submit}>
       <h1>Login </h1>
       <div className="inputs">
-                <input type="text"
-                 name='username' 
+                <input type="email"
+                 name='email' 
                  onChange={store} 
-                 placeholder='username'
+                 placeholder='email'
                  required />
                  <i class="fa-solid fa-user" ></i>
                  <br />
         
          </div>
          <div className="inputs">
-            <input type="text" 
-        name='email' 
+            <input type="password" 
+        name='password' 
         onChange={store} 
-        placeholder='email'
+        placeholder='password'
         required />
         <i class="fa-solid fa-lock"></i>
         <br />

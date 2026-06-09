@@ -6,6 +6,8 @@ import Scroller from './component/Scroller'
 import { Route, Routes } from 'react-router-dom'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
+import Category from './component/Category'
+import About from './component/About'
 export const Authcontext = createContext()
 const App = () => {
   let [Auth, setAuth] = useState(false)
@@ -24,8 +26,11 @@ const App = () => {
       }}
     >
       <Navbar13 />
-      <Home/>
+      {/* <Home/>
       <Scroller />
+      <Category/> */}
+      <About/>
+
 
       <Routes>
         {/* <Route path="/" element={<Home />} /> */}
