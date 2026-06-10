@@ -8,6 +8,8 @@ import Signup from './pages/Signup'
 import Login from './pages/Login'
 import Category from './component/Category'
 import About from './component/About'
+import Offer from './component/Offer'
+import Foodshowcase from './component/Foodshowcase'
 export const Authcontext = createContext()
 const App = () => {
   let [Auth, setAuth] = useState(false)
@@ -29,7 +31,9 @@ const App = () => {
       {/* <Home/>
       <Scroller />
       <Category/> */}
-      <About/>
+      {/* <About/> */}
+      {/* <Offer/> */}
+      <Foodshowcase/>
 
 
       <Routes>

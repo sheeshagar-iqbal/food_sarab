@@ -322,6 +322,8 @@
     .wwf{
         font-size: 2rem;
         font-weight: 200;
+        color: #EC4D1D;
+
     }
     .cgtitle{
         span{
@@ -403,8 +405,10 @@
 
   .abcontainer{
     display: flex;
-    padding: 90px;
-    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 150px;
+    gap: 150px;
     width: 100%;
     background-color: #FFFFFF;
 
@@ -412,39 +416,115 @@
 
   .abimg{
         position: relative;
-        /* width: 950px; */
-        border: 2px solid red;
+        width: 95%;
+        /* border: 2px solid red; */
 
-    .about1{
-        position: relative;
+  
+   
+  
+  }
+  .about1{
+        position: static;
         border-radius: 20px;
+        width: 100%;
+        img{
+            position: relative;
+            width: 100%;
+            object-fit: fill;
+        }
         
     }
-    .about2{
+     .about2{
         position: absolute;
-        right: 5%;
-        bottom: 10%;
+        width: 30%;
+        right: -5%;
+        bottom: -10%;
         border: 6px solid white;
         border-radius: 30px;
     }
-    h6{
+      .imgcon{
         position: absolute;
         top: 10%;
-        left: -5%;
+        left: -10%;
         background-color: #C71F13;
         color: white;
         padding: 45px 20px;
         border-radius: 20px;
     }
-  }
-
   .abcontain{
     text-align: left;
+
   }
 
 
   .abinfo{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+    padding-top: 20px;
   }
+  .abii{
+    padding: 15px;
+    background:#f6dad8;
+    border-radius: 10px;
+    color: #E8281A;
+  }
+  .abic{
+    h6{
+        margin: 0;
+        font-weight: 700;
+
+    }
+    p{
+        font-weight: 300;
+    }
+  }
+
+  .vfmbtn{
+    margin-top: 10px;
+    /* background: #000; */
+    i{
+        padding-left: 10px;
+    }
+  }
+@media (max-width: 1100px) {
+        .abcontainer{
+            /* display: block; */
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            padding: 90px ;
+
+            
+        }
+        .abimg{
+            align-items: center;
+        }
+
+        
+
+}
+
+
+
+
+
+
+/* ====================999999999999  food showcase  =================*/
+
+.fscard{
+    flex: grid;
+    grid-template-columns: auto auto auto;
+    height: 100vh;
+    grid-auto-rows:300px;
+
+    div{
+        border: 2px solid red;
+    }
+    .fsc1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
