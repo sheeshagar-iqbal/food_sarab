@@ -28,11 +28,11 @@ const App = () => {
       }}
     >
       <Navbar13 />
-      {/* <Home/>
+      <Home/>
       <Scroller />
-      <Category/> */}
-      {/* <About/> */}
-      {/* <Offer/> */}
+      <Category/>
+      <About/>
+      <Offer/>
       <Foodshowcase/>
 
 

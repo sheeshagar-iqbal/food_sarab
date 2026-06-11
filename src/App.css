@@ -401,7 +401,7 @@
 
 }
 
-  /* ==============about  ============== */
+  /* ==============abou=t==================================           ============== */
 
   .abcontainer{
     display: flex;
@@ -504,6 +504,97 @@
         
 
 }
+  /*   ==========================0ffer =========================================== */
+
+.ltoff{
+    background-color: #F6A623;
+    display: inline-block;
+    color: #080808;
+    border-radius: 5px;
+    padding: 5px 27px;
+    text-transform: uppercase;
+    margin: 0;
+    i{
+        padding-right: 12px;
+    }
+}
+
+.offtitle{
+    color: white;
+    font-size: 70px;
+    margin: 20px 0;
+}
+.offsub{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.offwatch{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+
+    .offt{
+        padding: 12px;
+        border: 1px solid rgb(248, 244, 244);
+        border-radius: 10px;
+        background-color: #919090a1;
+        color: white;
+        text-align: center;
+        strong{
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            line-height: 1px;
+        }
+        span{
+            font-weight: 600;
+            color: rgb(211, 210, 210);
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+    }
+}
+
+.offerimg{
+
+  animation: offerimg 2s  linear 1s infinite alternate ;
+  box-shadow:  0 0  50px  #ab7622;
+  
+}
+
+.discount{
+    border-radius: 50%;
+    padding: 30px 23px;
+}
+.discount span{
+    font-weight: 300;
+    color: #b4acac;
+    font-size: 13px;
+    text-decoration: line-through;
+    padding-left: 10px;
+}
+.discount p{
+    font-weight: 700;
+    color: #f8f5f5;
+    font-size: 22px;
+    margin: 0;
+}
+
+
+@keyframes offerimg {
+  from {
+    transform: translatey(10%);
+  }
+  to {
+    transform: translatey(-10%);
+  }
+}
+
+
+
 
 
 
@@ -511,15 +602,23 @@
 
 
 /* ====================999999999999  food showcase  =================*/
-
+.fsccontainer{
+    padding: 80px 100px;
+    background-color: #b49f7d;
+}
+.fsccontain{
+    padding-bottom: 30px;
+}
 .fscard{
-    flex: grid;
+    display: grid;
     grid-template-columns: auto auto auto;
-    height: 100vh;
-    grid-auto-rows:300px;
+    /* height: 100vh; */
+    grid-auto-rows:250px;
+    gap: 20px;
 
     div{
         border: 2px solid red;
+        border-radius: 20px;
     }
     .fsc1{
         grid-column-start: 1;
@@ -527,4 +626,13 @@
         grid-row-start: 1;
         grid-row-end: 3;
     }
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
 }
+
+
+
