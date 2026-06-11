@@ -11,6 +11,10 @@ import About from './component/About'
 import Offer from './component/Offer'
 import Foodshowcase from './component/Foodshowcase'
 import Menu from './component/Menu'
+import Chefs from './component/Chefs'
+import Opening_Hours from './component/Opening_Hours'
+import Reservation from './component/Reservation'
+import Review from './component/Review'
 export const Authcontext = createContext()
 const App = () => {
   let [Auth, setAuth] = useState(false)
@@ -35,7 +39,11 @@ const App = () => {
       <About/>
       <Offer/>
       <Foodshowcase/> */}
-      <Menu/>
+      {/* <Menu/> */}
+      {/* <Chefs/> */}
+      {/* <Opening_Hours/> */}
+      {/* <Reservation/> */}
+      <Review/>
 
 
       <Routes>
