@@ -611,7 +611,7 @@
 }
 .fscard{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     /* height: 100vh; */
     grid-auto-rows:250px;
     gap: 20px;
@@ -619,6 +619,9 @@
     div{
         border: 2px solid red;
         border-radius: 20px;
+    }
+    div:hover{
+        scale: 1.05;
     }
     .fsc1{
         grid-column-start: 1;
@@ -629,10 +632,113 @@
     img{
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        /* aspect-ratio: auto;
+        object-fit: cover; */
         overflow: hidden;
+        border-radius: 20px;
     }
 }
 
+@media screen and (max-width:950px) {
+    .fscard{
+    grid-template-columns: 1fr 1fr;
 
 
+    .fsc1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+  
+}
+
+@media screen and (max-width:650px) {
+    .fscard{
+    grid-template-columns: 1fr ;
+
+
+}
+.fsccontainer{
+    padding: 80px 50px;
+    background-color: #b49f7d;
+}
+  
+}
+
+
+/*     -==========================  menu   ========================================== */
+.menucontainer{
+    padding: 90px;
+}
+
+.menucontain{
+    padding: 30px;
+}
+
+.menulist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+}
+.menucard{
+    position: relative;
+    width: 400px;
+    border: 2px solid red;
+    border-radius: 20px;
+    img{
+        position: relative;
+        width: 100%;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+
+    }
+}
+.menuinfo{
+    padding: 0 15px;
+    padding-top: 10px;
+
+    h6{
+        color: #F6A623;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    h5{
+        margin: px 0;
+    }
+    p{
+        font-weight: 400;
+        line-height: 17px;
+    }
+}
+.top{
+  
+    position: absolute; 
+    top: 11px;
+    left: 23px;
+    z-index: 999;
+    color: #C71F13;
+    
+}
+.topstar{
+   
+    position: absolute; 
+    top: 11px;
+    right: 23px;
+    z-index: 999;
+    color: #C71F13;
+
+}
+.ratestar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .rate{
+        h2{
+            
+        }
+    }
+}

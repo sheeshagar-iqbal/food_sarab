@@ -11,19 +11,19 @@ const Foodshowcase = () => {
             </div>
             <div className="fscard">
                 <div className="fsc1">
-                  <img src="" alt="" />
+                  <img src={img} alt="" />
                 </div>
                 <div className="fsc2">
-                  <img src="" alt="" />
+                  <img src={img} alt="" />
                 </div>
                 <div className="fsc3">
-                  <img src="" alt="" />
+                  <img src={img} alt="" />
                 </div>
                 <div className="fsc4">
-                  <img src="" alt="" />
+                  <img src={img} alt="" />
                 </div>
                 <div className="fsc5">
-                  <img src="" alt="" />
+                  <img src={img} alt="" />
                 </div>
                 
             </div>

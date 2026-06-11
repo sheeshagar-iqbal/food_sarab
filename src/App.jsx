@@ -10,6 +10,7 @@ import Category from './component/Category'
 import About from './component/About'
 import Offer from './component/Offer'
 import Foodshowcase from './component/Foodshowcase'
+import Menu from './component/Menu'
 export const Authcontext = createContext()
 const App = () => {
   let [Auth, setAuth] = useState(false)
@@ -28,12 +29,13 @@ const App = () => {
       }}
     >
       <Navbar13 />
-      <Home/>
+      {/* <Home/>
       <Scroller />
       <Category/>
       <About/>
       <Offer/>
-      <Foodshowcase/>
+      <Foodshowcase/> */}
+      <Menu/>
 
 
       <Routes>
