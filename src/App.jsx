@@ -6,6 +6,8 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Loading from "./pages/Loading";
 import Menu from "./component/Menu";
+import CircularGallery from "./component/CircularGallery";
+import Chefs from "./component/Chefs";
 export const Authcontext = createContext();
 const App = () => {
   let [Auth, setAuth] = useState(false);
@@ -25,6 +27,8 @@ const App = () => {
       >
         <Navbar13 />
           <Menu/>
+        <Chefs/>
+
         <Routes>
           {/* <Route path="/" element={<Loading />} /> */}
           <Route path="/signup" element={<Signup />} />
