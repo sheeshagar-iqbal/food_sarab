@@ -11,7 +11,8 @@ const Navbar13 = () => {
   const {Auth ,setAuth,login,setLogin,signup,setSignup}=useContext(Authcontext)
   return (
     <>
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary navbar13">
+    <div className="navbar13">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary " >
       <Container>
         <Navbar.Brand href="#home">
             <div className="blogo">
@@ -26,13 +27,21 @@ const Navbar13 = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to=''  >Home</Nav.Link>
+            {/* <Nav.Link as={Link} to=''  >Home</Nav.Link>
             <Nav.Link as={Link} to=''  >About</Nav.Link>
             <Nav.Link as={Link} to=''  >Menu</Nav.Link>
             <Nav.Link as={Link} to=''  >Chefs</Nav.Link>
             <Nav.Link as={Link} to=''  >Resevation</Nav.Link>
             <Nav.Link as={Link} to=''  >Reviews</Nav.Link>
-            <Nav.Link as={Link} to=''  >Contact</Nav.Link>
+            <Nav.Link as={Link} to=''  >Contact</Nav.Link> */}
+
+             <Nav.Link href='#home'  >Home</Nav.Link>
+            <Nav.Link href='#about'  >About</Nav.Link>
+            <Nav.Link href='#menu'  >Menu</Nav.Link>
+            <Nav.Link href='#chefs'  >Chefs</Nav.Link>
+            <Nav.Link href='#resevation'  >Resevation</Nav.Link>
+            <Nav.Link href='#rewiews'  >Reviews</Nav.Link>
+            <Nav.Link href='contact'  >Contact</Nav.Link>
            
           </Nav>
 
@@ -58,6 +67,8 @@ const Navbar13 = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </div>
+    
   
     </>
   )

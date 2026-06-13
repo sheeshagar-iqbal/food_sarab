@@ -6,8 +6,8 @@ const Menulist = () => {
     <>
       <div className="menulist">
         <Menucard />
-        {/* <Menucard />
-        <Menucard /> */}
+        <Menucard />
+        <Menucard />
       </div>
     </>
   );
