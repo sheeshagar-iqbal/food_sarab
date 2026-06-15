@@ -6,6 +6,7 @@
     left:0;
     z-index: 234;
     width: 100%;
+    /* padding-bottom: 200px; */
 
 }
 .blogo{
@@ -729,13 +730,16 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 25px;
+    flex-wrap: wrap;
 
 }
 .menucard{
     position: relative;
     width: 400px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    background-color: #eae7e7;
     border-radius: 20px;
+    transition: all .3s ease;
     img{
         position: relative;
         width: 100%;
@@ -743,6 +747,10 @@
      border-top-right-radius: 20px;
 
     }
+}
+.menucard:hover{
+    /* transform: translateY(-5%); */
+    transform: scale(1.05);
 }
 .menuinfo{
     padding: 0 15px;
@@ -766,8 +774,12 @@
     position: absolute; 
     top: 11px;
     left: 23px;
-    z-index: 999;
-    color: #C71F13;
+    z-index:  100;
+    color: #80e07e;
+    i{
+        color: #ab7622;
+        margin-right: 5px;
+    }
     
 }
 .topstar{
@@ -775,19 +787,56 @@
     position: absolute; 
     top: 11px;
     right: 23px;
-    z-index: 999;
-    color: #C71F13;
+    z-index:100;
+    /* color: #f5f0f0; */
+ 
 
 }
 .ratestar{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
+
     .rate{
         h2{
-            
+            color: #E8281A;
+            font-size: 20px;
+            margin: 0;
+            span{
+                font-size: 14px;
+                text-decoration: line-through;
+                color: #8d8d8d;
+            }
+        }
+        p{
+            /* padding: 4px 20px; */
+            /* background-color: #ab7622; */
+            display: inline;
+            border-radius: 20px;
+            i{
+                color: #ab7622;
+            }
         }
     }
+}
+
+.addon{
+    /* padding: 9px 21px 18px 21px; */
+    margin: 0;
+    /* background-color: #D62417; */
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    color: rgb(246, 7, 7);
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addon:hover{
+    transform: scale(1.5);
+    /* rotate: 135deg; */
+
 }
 
 

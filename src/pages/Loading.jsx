@@ -42,7 +42,7 @@ const Loading = () => {
     </section>
     
         <section id='contact'>
-      {/* <Footer/> */}
+      <Footer/>
 
         </section>
      
