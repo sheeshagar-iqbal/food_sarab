@@ -4,26 +4,29 @@ import { useState } from "react";
 
 const Menucard = ({ item }) => {
   const [menuItems, setMenuItems] = useState(item);
-  const [like,setLike] =useState(false)
+  // const [like,setLike] =useState(false)
 
   const toggleFavorite = (id) => {
     console.log(id);
-    console.log(item);
     setMenuItems(
       menuItems.map((data) =>
+        // console.log(data)
         
-        data.id === id ? { ...data, like: setLike(!like) } : data,
-        // console.log(item.like);
-        console.log(like)
+        data.id === id ? { ...data, favorite:data.favorite } : data,
         
 
       ),
     );
+    // setMenuItems(menuItems)
+    console.log(menuItems['favorite']);
+    
+    console.log(menuItems)
+
   };
 
   return (
     <>
-      {item.map((value) => (
+      {menuItems.map((value) => (
         <div className="menucard" key={value.id}>
           <img src={value.image} alt="" />
           <div className="top">
@@ -35,7 +38,7 @@ const Menucard = ({ item }) => {
           <div
             className="topstar"
             onClick={() => toggleFavorite(value.id)}
-            style={{ color: value.favorite ? "red" : "white" }} 
+            style={{ color: value.like ? "red" : "white" }} 
           >
             {/* {value.favorite ? ( */}
               <i className="fa-solid fa-heart"></i>
@@ -48,7 +51,7 @@ const Menucard = ({ item }) => {
 
           <div className="menuinfo">
             <h6>{value.category}</h6>
-            <h5>{value.category}</h5>
+            <h5>{value.title}</h5>
             <p>{value.description}</p>
 
             <div className="ratestar">

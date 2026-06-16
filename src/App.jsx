@@ -26,11 +26,11 @@ const App = () => {
         }}
       >
         <Navbar13 />
-          <Menu/>
-        <Chefs/>
+          {/* <Menu/>
+        <Chefs/> */}
 
         <Routes>
-          {/* <Route path="/" element={<Loading />} /> */}
+          <Route path="/" element={<Loading />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
         </Routes>
