@@ -1,0 +1,32 @@
+{
+        "reservation":[
+            {
+                "id":1,
+                "name":"ali",
+                "number": 8745622417,
+                "email":"ali@gmail.com",
+                "guests":4,
+                "date":"12-12-2026",
+                "time":"12:51",
+                "specialRequest":"ice-cream "
+            }, {
+                "id":2,
+                "name":"ali",
+                "number": 8745622417,
+                "email":"ali@gmail.com",
+                "guests":4,
+                "date":"12-12-2026",
+                "time":"12:51",
+                "specialRequest":"ice-cream "
+            }, {
+                "id":3,
+                "name":"ali",
+                "number": 8745622417,
+                "email":"ali@gmail.com",
+                "guests":4,
+                "date":"12-12-2026",
+                "time":"12:51",
+                "specialRequest":"ice-cream "
+            }
+        ]
+}

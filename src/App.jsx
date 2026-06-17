@@ -8,6 +8,8 @@ import Loading from "./pages/Loading";
 import Menu from "./component/Menu";
 import CircularGallery from "./component/CircularGallery";
 import Chefs from "./component/Chefs";
+import Reservation from "./component/Reservation";
+import ReservationShow from "./component/ReservationShow";
 export const Authcontext = createContext();
 const App = () => {
   let [Auth, setAuth] = useState(false);
@@ -25,14 +27,14 @@ const App = () => {
           setSignup,
         }}
       >
-        <Navbar13 />
-          {/* <Menu/>
-        <Chefs/> */}
+        {/* <Navbar13 /> */}
+         {/* <Reservation/> */}
 
         <Routes>
           <Route path="/" element={<Loading />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/reservation" element={<ReservationShow />} />
         </Routes>
       </Authcontext.Provider>
     </>

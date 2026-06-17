@@ -10,7 +10,7 @@ import m7 from '../image/offer.jpg'
 
 
 
-const scr =[m,'Crispy Fried Chicken',m2,'Gourmet Burgers',m3,'Artisan Pizzas',m4,'Fresh Wraps  Rolls',m6,'Loaded Fries',m5,'Ice Cream Shakes',m7,'Crispy Fried Chicken',m1,'Gourmet Burgers',m2,'Artisan Pizzas',m3,'Fresh Wraps  Rolls',m4,'Loaded Fries',m6,'Ice Cream Shakes',m7]
+const scr =[m,'Crispy Fried Chicken',m6,'Gourmet Burgers',m3,'Artisan Pizzas',m4,'Fresh Wraps  Rolls',m6,'Loaded Fries',m5,'Ice Cream Shakes',m7,'Crispy Fried Chicken',m1,'Gourmet Burgers',m6,'Artisan Pizzas',m3,'Fresh Wraps  Rolls',m4,'Loaded Fries',m6,'Ice Cream Shakes',m7]
 
 const Scroller = () => {
   return (

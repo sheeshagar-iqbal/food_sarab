@@ -438,12 +438,13 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `https://themewagon.github.io/sarab/img/chefs/1.jpg`, text: 'Bridge' },
-      { image: `https://themewagon.github.io/sarab/img/chefs/3.jpg`, text: 'Desk Setup' },
-      { image: `https://themewagon.github.io/sarab/img/chefs/4.jpg`, text: 'Waterfall' },
-      { image: `https://themewagon.github.io/sarab/img/chefs/1.jpg`, text: 'Strawberries' },
-      { image:`https://themewagon.github.io/sarab/img/chefs/4.jpg`, text: 'Deep Diving' },
-      { image: `https://themewagon.github.io/sarab/img/chefs/3.jpg`, text: 'Train Track' },
+      { image: `https://themewagon.github.io/sarab/img/chefs/1.jpg`, text: 'Alice Mortal' },
+      { image: `https://themewagon.github.io/sarab/img/chefs/3.jpg`, text: 'Faz Chowdel' },
+      { image: `https://themewagon.github.io/sarab/img/chefs/4.jpg`, text: 'William Latnum' },
+      { image: `https://themewagon.github.io/sarab/img/chefs/1.jpg`, text: 'Alice Mortal' },
+      
+      { image: `https://themewagon.github.io/sarab/img/chefs/3.jpg`, text: 'Faz Chowdel' },
+      { image:`https://themewagon.github.io/sarab/img/chefs/4.jpg`, text: 'William Latnum' }
       
     ];
     const galleryItems = items && items.length ? items : defaultItems;

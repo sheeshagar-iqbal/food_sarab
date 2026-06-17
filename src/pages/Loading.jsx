@@ -37,7 +37,7 @@ const Loading = () => {
       {/* <Review/> */}
     </section>
     <section id='resevation'>
-      {/* <Reservation/> */}
+      <Reservation/>
                 
     </section>
     
