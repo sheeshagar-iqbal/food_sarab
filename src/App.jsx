@@ -27,7 +27,7 @@ const App = () => {
           setSignup,
         }}
       >
-        {/* <Navbar13 /> */}
+        <Navbar13 />
          {/* <Reservation/> */}
 
         <Routes>

@@ -35,6 +35,45 @@ const Home = () => {
 
         <div className='himg'>
             <img src={banner} alt="" />
+            <div className="hinfo1">
+              <div className="hbox">
+                          <div className="hboxi"><i class='fas fa-fire ' style={{color:'red'}}></i></div>
+              <div>
+                <span className='hboxt'>
+                  Hot Deal
+                </span>
+                <br />
+                <span className='hboxsub'>30% off today</span>
+              </div>
+              </div>
+              
+            </div>
+            <div className="hinfo2">
+              <div className="hbox">
+                          <div className="hboxi"> <i class='fas fa-clock' style={{color:'green'}}></i></div>
+              <div>
+                <span className='hboxt'>
+                  20 min
+                </span>
+                <br />
+                <span className='hboxsub'>Fast delivery</span>
+              </div>
+              </div>
+             
+            </div>
+            <div className="hinfo3">
+              <div className="hbox">
+                    <div className="hboxi"> <i class='fas fa-star' style={{color:'yellow'}}></i></div>
+              <div>
+                <span className='hboxt'>
+                  4.9/5
+                </span>
+                <br />
+                <span className='hboxsub'>2k+ reviews</span>
+              </div>
+              </div>
+              
+            </div>
         </div>
 
     </div>

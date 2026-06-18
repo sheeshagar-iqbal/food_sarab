@@ -1,32 +1,65 @@
 {
-        "reservation":[
-            {
-                "id":1,
-                "name":"ali",
-                "number": 8745622417,
-                "email":"ali@gmail.com",
-                "guests":4,
-                "date":"12-12-2026",
-                "time":"12:51",
-                "specialRequest":"ice-cream "
-            }, {
-                "id":2,
-                "name":"ali",
-                "number": 8745622417,
-                "email":"ali@gmail.com",
-                "guests":4,
-                "date":"12-12-2026",
-                "time":"12:51",
-                "specialRequest":"ice-cream "
-            }, {
-                "id":3,
-                "name":"ali",
-                "number": 8745622417,
-                "email":"ali@gmail.com",
-                "guests":4,
-                "date":"12-12-2026",
-                "time":"12:51",
-                "specialRequest":"ice-cream "
-            }
-        ]
+  "reservation": [
+    {
+      "name": "Scarlett Bailey",
+      "number": "47",
+      "email": "xufaheqe@mailinator.com",
+      "date": "2007-08-01",
+      "specialRequest": "Omnis voluptas venia",
+      "guests": "2",
+      "time": "9am",
+      "id": "wxCDFAnPMTc"
+    },
+    {
+      "name": "Leandra Slater",
+      "number": "551",
+      "email": "bemynalo@mailinator.com",
+      "date": "2002-06-07",
+      "specialRequest": "Magna quaerat aut mo",
+      "guests": "4",
+      "time": "7pm",
+      "id": "sUUd8yAy1r0"
+    },
+    {
+      "name": "Kendall Glenn",
+      "number": "426",
+      "email": "winokyjeme@mailinator.com",
+      "date": "2010-12-02",
+      "specialRequest": "Aut ut debitis adipi",
+      "guests": "1",
+      "time": "10am",
+      "id": "23nYH3ev3tQ"
+    },
+    {
+      "name": "Deborah Gay",
+      "number": "250",
+      "email": "ramupimu@mailinator.com",
+      "date": "2009-02-17",
+      "specialRequest": "Odio cum enim qui la",
+      "guests": "4",
+      "time": "6pm",
+      "id": "tW30IqutizE"
+    },
+    {
+      "name": "Noble Parrish",
+      "number": "191",
+      "email": "wigapequny@mailinator.com",
+      "date": "1985-08-02",
+      "specialRequest": "Nihil optio dolor d",
+      "guests": "4",
+      "time": "9am",
+      "id": "K1sr8YUPEP4"
+    },
+    {
+      "name": "Vera Morgan",
+      "number": "349",
+      "email": "fyzykel@mailinator.com",
+      "date": "1975-05-01",
+      "specialRequest": "Quae est ea nesciun",
+      "guests": "more",
+      "time": "8pm",
+      "id": "qpVJiOCFjlw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

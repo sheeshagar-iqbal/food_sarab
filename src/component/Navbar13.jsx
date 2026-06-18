@@ -19,8 +19,12 @@ const Navbar13 = () => {
                 <div className="bicon"><i className="fas fa-utensils">
             </i></div>
             <div>
-                   <div className="bname">Sar<span>ab</span></div>
+            <Nav.Link as={Link} to='/'  >
+             <div className="bname">Sar<span>ab</span></div>
             <div className="bsub">FAST FOOD & RESTAURANT</div>
+            </Nav.Link>
+
+                  
             </div>
            
                 </div></Navbar.Brand>
