@@ -51,8 +51,8 @@ const Navbar13 = () => {
 
           {(!Auth)?(
               <Nav className='flexitem'>
-            <Nav.Link as={Link} to='/signup' onClick={()=>setSignup(true)}><div className="btn"><button>Signup</button></div></Nav.Link>
-            <Nav.Link as={Link} to='/login' onClick={()=>setLogin(true)} >
+            <Nav.Link href='#' onClick={()=>setSignup(true)}><div className="btn"><button>Signup</button></div></Nav.Link>
+            <Nav.Link href='#' onClick={()=>setLogin(true)} >
               <div className='btn'><button>Login</button></div>
               </Nav.Link>
           </Nav>

@@ -12,7 +12,7 @@ const Chefs = () => {
           
             </div>
                 {/* <Cheflist/> */}
-                          <div style={{ height: '600px', position: 'relative' }}>
+                          <div style={{ height: '600px', position: 'relative',  width:'100%'}}>
   <CircularGallery
     bend={1}
     textColor="#ffffff"

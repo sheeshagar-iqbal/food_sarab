@@ -11,6 +11,8 @@ import Chefs from "./component/Chefs";
 import Reservation from "./component/Reservation";
 import ReservationShow from "./component/ReservationShow";
 export const Authcontext = createContext();
+
+
 const App = () => {
   let [Auth, setAuth] = useState(false);
   const [login, setLogin] = useState(false);
@@ -28,14 +30,19 @@ const App = () => {
         }}
       >
         <Navbar13 />
-         {/* <Reservation/> */}
 
-        <Routes>
-          <Route path="/" element={<Loading />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/reservation" element={<ReservationShow />} />
-        </Routes>
+          <Routes>
+                  <Route path="/" element={<Loading />} />
+                  <Route path="/reservation" element={<ReservationShow />} />
+                </Routes>
+        {/* <Loading/> */}
+        {signup && <Signup/>}
+        {login && <Login/>}
+
+    
+
+       
+        
       </Authcontext.Provider>
     </>
   );

@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Modal from "react-bootstrap/Modal";
 import { Authcontext } from '../App';
+import { toast } from 'react-toastify';
 
 const Login = () => {
     const [frmdata,setFrmdata]=useState({})
@@ -26,19 +27,24 @@ const Login = () => {
         console.log(data2);
         
         if(frmdata.email === data2.email && frmdata.email === data2.email){
-                    console.log('hi');
+                    // console.log('hi');
+                    toast.success('Login Successfully!');
+                    setLogin(false)
                     setAuth(true)
-                    navigate('/')
+                    // navigate('/')
 
         }
         else{
-          alert('user not found......')
+        //   alert('user not found......')
+                toast.warning('user not found......');
+        
         }
     }
 
   return (
     <>
-    <div className="frmcontainer">
+    { login &&
+     <div className="frmcontainer">
     <Modal show={login} onHide={() => setLogin(false)}>
 
         <div className="frmbox login">
@@ -82,7 +88,7 @@ const Login = () => {
         </div>
     </Modal>
 
-    </div>
+    </div>}
     </>
   )
 }

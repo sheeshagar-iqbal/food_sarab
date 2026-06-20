@@ -380,13 +380,16 @@
      justify-content: center;
      background-color:transparent;
      position: relative;
+     border-radius: 30px;
+
 }
 .frmbox{
     min-width: 420px;
     /* height: 450px; */
     color: rgb(233, 235, 236);
-    background-color: #666060;
+    background-color: #8a8585f1;
     padding: 40px;
+    /* border-radius: 30px; */
 }
 .frmbox h1{
     text-align: center;
@@ -503,7 +506,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 10px;
     padding-top: 60px;
 }
 
@@ -514,7 +517,7 @@
         padding: 15px 60px;
         background-color: #ebe5e5;
         border: none;
-        transition: all 0.3s ease;
+        transition: all 0.5s linear;
 
         img{
             border-radius: 50%;
@@ -1685,4 +1688,11 @@ footer{
     .cltitle{
         font-size: 1.4rem;
     }
+}
+
+
+button:hover{
+    border: 2px solid red;
+    background-color: transparent;
+    color: #080808;
 }

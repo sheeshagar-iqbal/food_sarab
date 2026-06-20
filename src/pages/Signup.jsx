@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import {  Link,useNavigate } from 'react-router-dom'
 import { Authcontext } from '../App'
 import Modal from "react-bootstrap/Modal";
-
+import { toast } from 'react-toastify';
 
 const Signup = () => {
     const [frmdata,setFrmdata]=useState({})
@@ -23,21 +23,24 @@ const Signup = () => {
         console.log(frmdata);
         // setdata([...data,frmdata])
         localStorage.setItem('signkey',JSON.stringify(frmdata))
-        console.log(data);
+        // console.log(data);
+        toast.success('Signup Successfully!');
         setLogin(true)
-        navigate('/login')
+        setSignup(false)
+        // navigate('/login')
         
     }
 
   return (
     <>
 
+  { signup &&
    <div className="frmcontainer">
     <Modal show={signup} onHide={() => setSignup(false)}>
 
         <div className="frmbox login">
              <form action="" onSubmit={submit}>
-      <h1>Login </h1>
+      <h1>SignUp </h1>
       <div className="inputs">
                 <input type="text"
                  name='username' 
@@ -62,7 +65,7 @@ const Signup = () => {
             <input type="password" 
         name='password' 
         onChange={store} 
-        placeholder='email'
+        placeholder='password'
         required />
         <i class="fa-solid fa-lock"></i>
         <br />
@@ -88,7 +91,7 @@ const Signup = () => {
         </div>
     </Modal>
 
-    </div>
+    </div>}
     
     </>
   )
